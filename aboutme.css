@@ -1,0 +1,123 @@
+body{margin: 0;
+font-family:'Roboto', sans-serif;;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+#introduction{
+    background-image: url("/introduction_background.jpg");
+    /* background-size:100% 300%; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-blend-mode:luminosity; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    padding: 60px;
+    color: white;
+}
+#introduction > h1, #introduction>h2, #introduction>h3, #introduction> img {
+padding: 10px;
+}
+.grin_zeez{
+    height: 250px;
+    width: 250px;
+    border-radius: 50px;
+}
+#Description{
+    height: 200px;
+    padding: 60px;
+    background-color:#F2AA4CFF;
+    text-align: center;
+    font-size: larger;
+}
+#Experience{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    height: 300px;
+    background-color: #101820FF;
+    color: white;
+}
+.Experience_education,.Experience_job,.Experience_hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+.list_class{
+    list-style: none;
+    align-items: center;
+}
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2AA4CFF;
+    height: 200px;
+}
+button{
+    background-color: #101820FF;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 150px;
+    margin: 20px;
+}
+
+
+
+
+/* CONTACT PAGE */
+
+nav {
+    background-color: #F2AA4CFF;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+}
+
+.brand {
+    flex-grow: 0.3;
+}
+footer {
+    background-color: darkslategray;
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 900px) {
+    #Experience{
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .Experience_education,.Experience_hobbies,.Experience_job{
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+    }
+}
